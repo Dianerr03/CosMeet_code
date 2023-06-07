@@ -15,9 +15,8 @@ body {
     color: #202020;
 }
 
-section {
-    max-width: 1200px;
-    margin: auto;
+.grad {
+    background-image: linear-gradient(#010302, #7109B6, #F72586);
 }
 
 .navigation {
@@ -27,13 +26,7 @@ section {
 .center-align {
    display: flex;
    align-items: center;
-   justify-content: space-between;
-}
-
-.logo {
-    display: inline-block;
-    padding: 15px 15px;
-    padding-left: 20px;
+   justify-content: space-around;
 }
 
 .LogoH {
@@ -46,10 +39,16 @@ section {
     align-items: center;
 }
 
+.header-container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
 nav {
     margin: 10px;
     padding-right: 10px;
-    align-items: right;
+    align-items: center;
     position: absolute;
 }
 
@@ -67,12 +66,6 @@ h1 {
     width: 100%;
 }
 
-.header-container{
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
 .default-button {
     background-image: linear-gradient(to right, #F72586, #410EA8);
     border-radius: 50px;
@@ -85,6 +78,7 @@ h1 {
 
 .quote {
     font-family: 'Berkshire Swash', cursive;
+    size: 100%;
     color: #ffffff;
     justify-content: center;
 }
@@ -97,7 +91,7 @@ h1 {
  }
 
  nav ul {
-     /* flex-direction: row;   */
+     flex-direction: row;  
      list-style-type: none;
      text-decoration: none;
      align-items: right;
