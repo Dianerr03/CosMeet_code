@@ -20,7 +20,8 @@ body {
 }
 
 .navigation {
-    justify-content: center;
+   /** justify-content: center;**/
+
 }
 
 .center-align {
@@ -105,14 +106,17 @@ h1 {
      list-style-type: none;
      text-decoration: none;
      align-items: right;
+
  }
 
  li {
      display: inline-block;
      width: 140px;
+     float: left;
  }
 
- a {
+
+li a:hover {
         color: #ffffff;
         cursor: pointer;
         text-decoration: underline;
