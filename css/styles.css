@@ -100,9 +100,11 @@ h1 {
  li {
      display: inline-block;
      width: 140px;
+     float: left;
  }
 
- a {
+
+li a:hover {
         color: #ffffff;
         cursor: pointer;
         text-decoration: underline;
