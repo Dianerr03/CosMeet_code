@@ -33,6 +33,7 @@ body {
     position: absolute;
     top: 18px;
     left: 60px;
+    flex: 1;
 }
 
 .LogoF {
@@ -43,6 +44,15 @@ body {
     position: relative;
     text-align: center;
     color: white;
+}
+
+ .margin-col {
+     grid-template-columns: auto 75% auto;
+ }
+
+.logo-nav {
+    display: flex;
+    align-items: center;
 }
 
 nav {
