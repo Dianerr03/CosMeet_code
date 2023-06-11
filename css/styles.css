@@ -1,50 +1,123 @@
 header {
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px 2px 0px #cecece;
+    box-shadow: 0px 2px 0px #CECECE;
     padding: 0px 16px 0px 16px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
     background-color: white;
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     /* max-width: 1200px; */
     font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
     color: #202020;
 }
 
+.logolinks {
+    align-items:center;
+    height: 300px;
+    width: 100%;
+    justify-content: space-between;
+}
+
 .grad {
     background-image: linear-gradient(#010302, #7109B6, #F72586);
+    height: 600px;
+    width: 2050px;
 }
 
 .navigation {
-   /** justify-content: center;**/
+display: flex;
+background-image: url(../images/Heroimg-CosMeet.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+height: 1300px;
+width: 900px;
+background-position-y: -50px;
+}
 
+.connecting{
+    max-width: 700px;
+    margin: auto;
+    padding-top: 214px;
+    display: flex;
+    text-align: center;
+    position: relative;
+}
+
+.connectingcontent{
+    background-color: rgba(255, 255, 255, 0.8);
+    min-width: 700px;
+    box-shadow: 0px 4px 16px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.hidden  {
+    display: none;
+}
+
+.connectingcontent h2{
+    margin: 0px;
+}
+
+.leftstar  {
+    width: 80px;
+    top: 140px;
+    position: absolute;
+    left: -84px;
+}
+.rightstar  {
+    width: 80px;
+    top: 424px;
+    position: absolute;
+    left: 724px;
+}
+
+.leftstarimg, .rightstarimg {
+    width: 100%;
 }
 
 .center-align {
    display: flex;
    align-items: center;
    justify-content: space-around;
+   padding-top: 60px;
 }
-
 .LogoH {
     position: absolute;
-    top: 18px;
-    left: 60px;
+    top: 42px;
+    left: 135px;
     flex: 1;
+}
+
+.whitelogo {
+    width: 320px; 
+    height: 142px;
 }
 
 .LogoF {
     align-items: center;
+    position: absolute;
+    left: 855px;
+    top: 1960px;
 }
 
 .header-container{
-    position: relative;
     text-align: center;
     color: white;
+    width: 100%;
 }
 
  .margin-col {
@@ -60,7 +133,8 @@ nav {
     margin: 10px;
     padding-right: 10px;
     align-items: center;
-    position: absolute;
+    display: flex;
+    float: right;
 }
 
 h1 {
@@ -69,6 +143,16 @@ h1 {
     justify-content: center;
 }
 
+h3{
+    font-family: 'Poppins', sans-serif;
+    color: #202020;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+}
 .heroImg {
     display: flex;
     align-items: center;
@@ -86,38 +170,66 @@ h1 {
     float: left;
     margin: 0;
 }
+.sign-button {
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    color: rgb(234, 35,  139);
+    padding: 15px 32px;
+    font-size: 16px;
+    float: left;
+    margin-left: 20px;
+}
 
-.quote {
+.join-button {
+    background-image: linear-gradient(to right, #F72586, #410EA8);
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    padding: 15px 40px;
+    font-size: 16px;
+    float: left;
+    margin-right: 20px;
+}
+
+.connectingbuttons {
+    display: flex;
+}
+
+.quotecenter{
     font-family: 'Berkshire Swash', cursive;
+    font-size: 40px;
     size: 100%;
-    color: #ffffff;
-    justify-content: center;
+    Color: white;
+    position: absolute;
+    height: 129px;
+    left: 324px;
+    top: 360px;
+    letter-spacing: 1px;
 }
 
  ul {
-     margin-block-start: 1em;
-     margin-block-end: 1em;
+     margin-block-start: 6em;
+     margin-block-end: 6em;
      margin-inline-start: 0px;
      margin-inline-end: 0px;
+     padding-right: 135px;
  }
 
  nav ul {
-     flex-direction: row;  
+     flex-direction: row;
      list-style-type: none;
      text-decoration: none;
-     align-items: right;
-
+     align-items: center;
+     justify-content: space-between;
  }
 
  li {
      display: inline-block;
      width: 140px;
-     float: left;
  }
 
-
-li a:hover {
-        color: #ffffff;
+ a {
+        display: block;
+        color: #FFFFFF;
         cursor: pointer;
         text-decoration: underline;
         font-family: 'Poppins', sans-serif, 'Open Sans', Helvetica, sans-serif;
@@ -129,10 +241,30 @@ li a:hover {
      align-items: center;
      flex-direction: column;
      justify-content: center;
-     padding: 16px 16px 16px 16px;
-     height: 180px;
+     padding: 0px;
+     height: 600px;
      font-family: 'Poppins', sans-serif, 'Open Sans', Helvetica, sans-serif;
-     color: #ffffff;
-     margin-top: 35px;
+     color: #FFFFFF;
  }
 
+.Social-media{
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+    height: 75px;
+    width: 75px;
+    padding: 10px;
+    padding-top: 15px;
+}
+
+.containerF {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+}
+
+p {
+    padding: 25px;
+}
