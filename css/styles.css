@@ -75,7 +75,7 @@ width: 800px;
 
 .rightstar  {
     width: 95px;
-    margin-bottom: -55px;
+    margin-bottom: 55px;
 }
 
 .leftstarimg, .rightstarimg {
@@ -95,9 +95,9 @@ width: 800px;
 }
 
 .LogoF {
-    align-items: center;
+    /* align-items: center;
     position: absolute;
-    top: 1960px;
+    top: 1960px; */
 }
 
 .header-container{
@@ -235,7 +235,7 @@ li {
      flex-direction: column;
      justify-content: center;
      padding: 0px;
-     height: 450px;
+     min-height: 450px;
      font-family: 'Poppins', sans-serif, 'Open Sans', Helvetica, sans-serif;
      color: #FFFFFF;
  }
@@ -243,13 +243,12 @@ li {
 .Social-media{
   display: flex;
   justify-content: center;
+  margin-top: 10%;
 }
 
 .icons {
-    height: 75px;
-    width: 75px;
+    width: 60px;
     padding: 10px;
-    padding-top: 210px;
 }
 
 .containerF {
