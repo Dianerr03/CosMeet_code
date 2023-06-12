@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>CosMeet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,500&family=Poppins:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,500&family=Poppins:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -11,43 +19,49 @@
 </head>
 
 <body class="hidden">
+
+    <button onclick="scrollToTop()" id="myBtn" title="Go to top">Top</button>
+
+
     <header class="navigation header-container">
-        <div class = "logolinks">
-        <div class="LogoH">
-            <a href="index.html">
-            <img src="../CosMeet_code/images/CosMeet-whitelogo.png" class="whitelogo" alt="CosMeet logo">
-            </a>
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                                Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html">
-                                About Us
-                            </a>
-                    </li>
-                    <li>
-                        <a href="#"> <button class="default-button">
-                                Download
-                            </button></a>
-                    </li>
-                </ul>
-                <div class="quotecenter">
+        <div class="container-fluid">
+            <div class="logolinks row align-items-center">
+                <a href="index.html" class="col center">
+                    <img src="../CosMeet_code/images/CosMeet-whitelogo.png" class="whitelogo" alt="CosMeet logo">
+                </a>
+                <div class="col">
+                    <nav>
+                        <ul class="center">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> <button class="default-button">
+                                        Download
+                                    </button></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- <p class="quote">"Across the vast cosmos, our souls align, bound by the celestial dance of the stars"</p> -->
+                    <!-- <img class="heroImg" src="../CosMeet_code/images/Heroimg-CosMeet.jpg" alt="CosMeet Hero Image"> -->
+                    </nav>
+                </div>
+            </div>
+            <div class="row justify-content-center quote-spacing">
+                <div class="col-10 quotecenter">
                     <p>"Across the vast cosmos, our souls align, bound by the celestial dance of the stars"</p>
                 </div>
-            </nav>
-            <!-- <p class="quote">"Across the vast cosmos, our souls align, bound by the celestial dance of the stars"</p> -->
-            <!-- <img class="heroImg" src="../CosMeet_code/images/Heroimg-CosMeet.jpg" alt="CosMeet Hero Image"> -->
-            </nav>
+            </div>
         </div>
-    </div>
-</header>
-<div class="grad">
+    </header>
+    <!-- <div class="grad">
     <div class ="connecting">
         <div class = "leftstar">
             <img src="images/starsLeft.png" class = "leftstarimg">
@@ -92,17 +106,18 @@
                 </div>
 
                 </div>
-                
+
                 <p>CosMeet © All Rights Reserved</p>
         </div>
-    </footer>
-<!--
+    </footer> -->
+    <!--
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script> -->
     <!-- <script src="JS/index.js"></script> -->
     <script>
-$(document).ready(function () {
-  $ ('.hidden').fadeIn(900).removeClass('hidden');
-});
-        </script>
+        $(document).ready(function () {
+            $('.hidden').fadeIn(900).removeClass('hidden');
+        });
+    </script>
 </body>
+
 </html>
