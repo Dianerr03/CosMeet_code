@@ -22,7 +22,7 @@ body {
 
 .grad {
     background-image: linear-gradient(#010302, #7109B6, #F72586);
-    height: 600px;
+    min-height: 600px;
 }
 
 .center {
@@ -41,7 +41,7 @@ width: 800px;
 }
 
 .connecting{
-    max-width: 700px;
+    /* max-width: 700px; */
     margin: auto;
     padding-top: 214px;
     display: flex;
@@ -51,7 +51,7 @@ width: 800px;
 
 .connectingcontent{
     background-color: rgba(255, 255, 255, 0.8);
-    min-width: 700px;
+    /* min-width: 700px; */
     box-shadow: 0px 4px 16px 6px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
@@ -69,16 +69,13 @@ width: 800px;
 }
 
 .leftstar  {
-    width: 80px;
-    top: 140px;
-    position: absolute;
-    left: -84px;
+    width: 95px;
+    margin-top: -55px;
 }
+
 .rightstar  {
-    width: 80px;
-    top: 424px;
-    position: absolute;
-    left: 724px;
+    width: 95px;
+    margin-bottom: -55px;
 }
 
 .leftstarimg, .rightstarimg {
